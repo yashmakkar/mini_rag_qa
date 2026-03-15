@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What does SELECT do in PostgreSQL?",
+    "answer": "SELECT retrieves rows from one or more tables or views, supporting filtering, joining, grouping, ordering, and limiting results."
+  },
+  {
+    "question": "What is VACUUM used for?",
+    "answer": "VACUUM reclaims storage occupied by dead tuples and prevents transaction ID wraparound, keeping the database healthy."
+  },
+  {
+    "question": "What is MVCC in PostgreSQL?",
+    "answer": "MVCC (Multi-Version Concurrency Control) allows readers and writers to avoid blocking each other by maintaining multiple versions of rows."
+  },
+  {
+    "question": "How do you insert rows into a table?",
+    "answer": "Use the INSERT INTO statement specifying the table name, optional column list, and VALUES or a SELECT subquery."
+  },
+  {
+    "question": "How do you update existing rows in PostgreSQL?",
+    "answer": "Use the UPDATE statement with a SET clause to change column values and an optional WHERE clause to filter which rows are updated."
+  },
+  {
+    "question": "How do you delete rows from a table?",
+    "answer": "Use the DELETE FROM statement with an optional WHERE clause to remove matching rows from a table."
+  },
+  {
+    "question": "What is the difference between DELETE and TRUNCATE?",
+    "answer": "DELETE removes rows one at a time and fires triggers; TRUNCATE removes all rows instantly without scanning the table and is faster."
+  },
+  {
+    "question": "How do you create an index in PostgreSQL?",
+    "answer": "Use CREATE INDEX specifying the index name, table, and one or more columns. You can also specify the index type such as B-tree or GIN."
+  },
+  {
+    "question": "What is a partial index?",
+    "answer": "A partial index is built over a subset of rows defined by a WHERE clause, making it smaller and faster for queries that match that condition."
+  },
+  {
+    "question": "What does EXPLAIN do?",
+    "answer": "EXPLAIN shows the query execution plan chosen by the planner, including estimated costs, row counts, and the join or scan strategies used."
+  },
+  {
+    "question": "How do you start and commit a transaction?",
+    "answer": "Use BEGIN to start a transaction block and COMMIT to make all changes permanent. Use ROLLBACK to undo them."
+  },
+  {
+    "question": "What is a savepoint?",
+    "answer": "A savepoint marks a point within a transaction to which you can roll back without aborting the entire transaction using ROLLBACK TO SAVEPOINT."
+  },
+  {
+    "question": "How do you grant privileges in PostgreSQL?",
+    "answer": "Use the GRANT statement to give a role or user specific privileges such as SELECT, INSERT, or ALL PRIVILEGES on a table or database object."
+  },
+  {
+    "question": "What does CREATE VIEW do?",
+    "answer": "CREATE VIEW defines a named query stored in the database that can be queried like a table, optionally with the WITH CHECK OPTION constraint."
+  },
+  {
+    "question": "What are constraints in PostgreSQL?",
+    "answer": "Constraints enforce data integrity rules on columns or tables, including NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, and CHECK constraints."
+  }
+]
