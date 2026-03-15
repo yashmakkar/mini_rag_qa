@@ -62,10 +62,3 @@ uv run python scripts/run_eval.py
 - **Recall@k** — proxy measure: whether any of the top-k retrieved chunks contains keywords from the question
 - **Answer cosine similarity** — embedding cosine similarity between the generated answer and the reference answer
 
-## Limitations
-
-- Recall@k uses keyword overlap as a proxy since there are no gold document IDs; a proper setup would annotate each question with the expected source chunk
-- The guardrail is score-based (FAISS L2 distance threshold) and may reject borderline valid questions or pass loosely related ones
-- Chat history is passed as raw text; very long conversations will eventually exceed the context window
-- Index is static — adding new documentation requires re-running `build_index.py`
-- `UnstructuredURLLoader` may fail on pages with heavy JavaScript rendering
